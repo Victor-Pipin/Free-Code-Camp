@@ -6,14 +6,54 @@
     <title>Document</title>
 </head>
 <body>
-        <!-- Для CEO оптимизации добавлен элемент <main>, содержит уникальный, основной контент документа -->
+        <!-- Для SEO оптимизации добавлен элемент <main>, содержит уникальный, основной контент документа -->
         <main>
+            <!-- Элемент <h1> служит главным заголовком для всей страницы. -->
             <h1>CatPhotoApp</h1>
     
+            <!-- Добавлен элемент <section> для SEO, который группирует тематический контент и служит его обёрткой. -->
+            <section>
+            <!-- Элемент <h2> служит заголовком для данной секции и подзаголовком для страницы. -->
             <h2>Cat Photos</h2>
         
-            <!-- TODO: Add link to cat photos -->
-            <p>Everyone loves cute cats online!</p>
+            <p>
+            Everyone loves 
+            <!-- Атрибут target="_blank", позволяет при переходе открывать ссылку в новом окне -->
+            <a href="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg" target="_blank">
+            cute cats
+            </a>
+            online!
+            </p>
+            
+            <p>
+            See more 
+            <a href="https://freecatphotoapp.com" target="_blank">
+            cat photos
+            </a> 
+            in our gallery
+            </p>
+
+            <!-- Элемент <a> оборачивает изображение, делая его кликабельной ссылкой на страницу с фотографиями котов. -->
+            <a href="https://freecatphotoapp.com">
+            <img 
+            src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" 
+            alt="A cute orange cat lying on its back"
+            >
+            </a>
+        </section>
+
+        <section>
+            <h2>Cat Lists</h2>
+
+            <!-- К существующему заголовку второй секции <h2>, добавлен заголовок <h3> , как заголовок подраздела этой же секции -->
+            <h3>Things cats love:</h3>
+
+            <ul>
+                <li>cat nip</li>
+                <li>laser pointers</li>
+                <li>lasagna</li>
+            </ul>
+        </section>
         </main>
 </body>
 </html>

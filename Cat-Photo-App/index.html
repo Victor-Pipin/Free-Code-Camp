@@ -6,14 +6,101 @@
     <title>Document</title>
 </head>
 <body>
-        <!-- Для CEO оптимизации добавлен элемент <main>, содержит уникальный, основной контент документа -->
+        <!-- Для SEO оптимизации добавлен элемент <main>, содержит уникальный, основной контент документа -->
         <main>
+            <!-- Элемент <h1> служит главным заголовком для всей страницы. -->
             <h1>CatPhotoApp</h1>
     
+            <!-- Добавлен семантический элемент <section> для SEO, который группирует тематический контент и служит его обёрткой. -->
+            <!-- Секция #1 - тематика этой секции фотографии котов -->
+            <section>
+            <!-- Элемент <h2> служит заголовком для данной секции и подзаголовком для страницы. -->
             <h2>Cat Photos</h2>
         
-            <!-- TODO: Add link to cat photos -->
-            <p>Everyone loves cute cats online!</p>
+            <p>
+            Everyone loves 
+            <!-- Атрибут target="_blank", позволяет при переходе открывать ссылку в новом окне -->
+            <a href="https://cdn.freecodecamp.org/curriculum/cat-photo-app/running-cats.jpg" target="_blank">
+            cute cats
+            </a>
+            online!
+            </p>
+            
+            <p>
+            See more 
+            <a href="https://freecatphotoapp.com" target="_blank">
+            cat photos
+            </a> 
+            in our gallery
+            </p>
+
+            <!-- Элемент <a> оборачивает изображение, делая его кликабельной ссылкой на страницу с фотографиями котов. -->
+            <a href="https://freecatphotoapp.com">
+            <img 
+            src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" 
+            alt="A cute orange cat lying on its back"
+            >
+            </a>
+            </section>
+
+        <!-- Секция #2 - тематика этой секции списки, 1 список того, что любят коты, 2 список того, что коты нелюбят -->
+        <section>
+            <h2>Cat Lists</h2>
+
+            <!-- К существующему заголовку второй секции <h2>, добавлен заголовок <h3>, как заголовок подраздела этой же секции -->
+            <h3>Things cats love:</h3>
+
+            <ul>
+                <li>cat nip</li>
+                <li>laser pointers</li>
+                <li>lasagna</li>
+            </ul>
+
+            <!-- Элемент <figure> группирует медиа-контент, улучшает семантику, можно перемещать по документу, индексируемый -->
+            <figure>
+                <img 
+                src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" 
+                alt="A slice of lasagna ona plate."
+                >
+
+                <!-- Элемент <figcaption> используется внутри элемента <figure> для описания (подписи) его содержимого -->
+                <!-- Элемент <em> предназначен для выделения важного текста, который должен быть прочитан с акцентом -->
+                <figcaption>
+                    Cats <em>love</em> lasagna.
+                </figcaption>
+            </figure>
+            
+            <!-- Второй заголовок <h3>, как заголовок второго, тематического подраздела этой же секции -->
+            <h3>Top 3 things cats hate:</h3>
+
+            <ol>
+                <li>flea treatment</li>
+                <li>thunder</li>
+                <li>other cats</li>
+            </ol>
+
+            <figure>
+                <img 
+                src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" 
+                alt="Five cats looking around a field."
+                >
+                <figcaption>
+                    <!-- Элемент strong используется для обозначения важности или срочности какого-либо текста. -->
+                    Cats <strong>hate</strong> other cats.
+                </figcaption>
+            </figure>
+        </section>
+
+        <section>
+            <h2>Cat Form</h2>
+            <!-- Элемент <form> собирает данные внесённые пользователем и отправляет их по адресу указанному в атрибуте action -->
+            <form action="https://freecatphotoapp.com/submit-cat-photo">
+                <!-- Элемент <input> внутри элемента <form> позволяет собирать вводимые пользователем данные для отправки -->
+                <!-- Атрибут name позволяет идентифицировать данные, отправляемые из элемента <input>, 
+                    на сервере после отправки формы и определять, какое значение собиралось. -->
+                <input type="text" name="catphotourl">
+            </form>
+        </section>
         </main>
 </body>
 </html>

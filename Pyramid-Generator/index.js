@@ -1,6 +1,6 @@
 
-let character = 'Hello';
+const character = 'Hello';
 
-let count = 8;
+const count = 8;
 
-let rows = [];
+const rows = [];

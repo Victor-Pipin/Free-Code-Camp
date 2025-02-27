@@ -118,9 +118,14 @@
 
                 <fieldset>
                     <legend>What's your cat's personality?</legend>
+
                     <!-- Элемент input с атрибутом type, установленным на checkbox, создает флажок.
                     В формах обычно используются checkbox для вопросов, на которые может быть несколько ответов.  -->
-                    <input id="loving" type="checkbox"> Loving
+                    <input id="loving" type="checkbox">
+
+                    <!-- Другой способ связать текст элемента <input> с самим элементом. 
+                    Можно вложить текст в элемент <label> и добавить атрибут for с тем же значением, что и атрибут id элемента <input>. -->
+                    <label for="loving">Loving</label>
                 </fieldset>
                 
                 <!-- Элемент <input> внутри элемента <form> позволяет собирать вводимые пользователем данные для отправки -->

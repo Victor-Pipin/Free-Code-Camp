@@ -108,11 +108,11 @@
                     это гарантирует выбор единственного варианта кнопки из предложенных -->
                     <!-- Атрибут value определяет, какое значение будет отправлено на сервер при выборе этой радио-кнопки. 
                     Это значение будет доступно на сервере при отправке формы. -->
-                    <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor"> Indoor</label>
+                    <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor">Indoor</label>
                     
                     <br>
 
-                    <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+                    <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor">Outdoor</label>
                 </fieldset>
 
 
@@ -126,6 +126,9 @@
                     <!-- Другой способ связать текст элемента <input> с самим элементом. 
                     Можно вложить текст в элемент <label> и добавить атрибут for с тем же значением, что и атрибут id элемента <input>. -->
                     <label for="loving">Loving</label>
+
+                    <input id="lazy" type="checkbox" name="personality">
+                    <label for="lazy">Lazy</label>
                 </fieldset>
                 
                 <!-- Элемент <input> внутри элемента <form> позволяет собирать вводимые пользователем данные для отправки -->

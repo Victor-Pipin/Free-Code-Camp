@@ -107,7 +107,8 @@
                     <!-- Чтобы исключить выбор нескольких радиокнопок, все кнопки должны иметь атрибут name с одинаковым значением,
                     это гарантирует выбор единственного варианта кнопки из предложенных -->
                     <!-- Атрибут value определяет, какое значение будет отправлено на сервер при выборе этой радио-кнопки. 
-                    Это значение будет доступно на сервере при отправке формы. -->
+                    Это значение будет доступно на сервере при отправке формы.
+                    Хотя атрибут value является необязательным, лучше всего включать его в любые чекбоксы и радиокнопки на странице. -->
                     <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor">Indoor</label>
                     
                     <br>
@@ -121,15 +122,15 @@
 
                     <!-- Элемент input с атрибутом type, установленным на checkbox, создает флажок.
                     В формах обычно используются checkbox для вопросов, на которые может быть несколько ответов.  -->
-                    <input id="loving" type="checkbox" name="personality">
+                    <input id="loving" type="checkbox" name="personality" value="loving">
                     <!-- Другой способ связать текст элемента <input> с самим элементом. 
                     Можно вложить текст в элемент <label> и добавить атрибут for с тем же значением, что и атрибут id элемента <input>. -->
                     <label for="loving">Loving</label>
 
-                    <input id="lazy" type="checkbox" name="personality">
+                    <input id="lazy" type="checkbox" name="personality" value="lazy">
                     <label for="lazy">Lazy</label>
 
-                    <input id="energetic" type="checkbox" name="personality">
+                    <input id="energetic" type="checkbox" name="personality" value="energetic">
                     <label for="energetic">Energetic</label>
                 </fieldset>
                 
